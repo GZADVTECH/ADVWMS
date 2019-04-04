@@ -11,12 +11,33 @@ go
 
 use DB_ADVWMS
 go
+--drop table T_USER
+--drop table T_REPORT
+--drop table T_EVENT
+--drop table T_SALARY
+--drop table T_ATTENDANCE
+--drop table T_APPLY
+--drop table T_REIMBURSEMENT
+--drop table T_REIMBURSEMENTCONTENT
+--drop table T_GOODS
+--drop table T_PURCHASESALE
+--drop table T_CUSTOMER
+--drop table T_PURCHASESALEMESSAGE
+--drop table T_ACCESS
+--drop table T_SEQUENCE
+--drop table T_SEQUENCEOPERATION
+--drop table T_STOCK
+--drop table T_EXPRESS
+--drop table T_INVOICE
+--drop table T_AFTERSALE
+--drop table T_LOGIN
+--go
 
 --µÇÂ½±í
 create table T_LOGIN
 (
 	l_id int primary key identity(1,1),
-	l_accountnumber nvarchar(24) not null,
+	l_accountnumber nvarchar(24) unique not null,
 	l_password nvarchar(max) not null,
 	l_level tinyint not null,
 	l_position nvarchar(20),
@@ -274,5 +295,16 @@ create table T_AFTERSALE
 	as_state nvarchar(10),
 	as_remark nvarchar(255),
 	as_type nvarchar(10)
+)
+go
+
+--µÇÂ¼¼ÇÂ¼±í
+create table T_LOGINRECORD
+(
+	lr_id nvarchar(30) primary key,
+	lr_uid int foreign key references T_LOGIN(l_id),
+	lr_logintime smalldatetime,
+	lr_exittime smalldatetime,
+	lr_ipaddress nvarchar(30)
 )
 go
