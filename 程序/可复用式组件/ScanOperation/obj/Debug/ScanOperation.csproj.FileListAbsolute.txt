@@ -1,0 +1,6 @@
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\ScanOperation\bin\Debug\ScanOperation.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\ScanOperation\bin\Debug\ScanOperation.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\ScanOperation\bin\Debug\asprise-scan-scanner-twain-wia-api.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\ScanOperation\obj\Debug\ScanOperation.csprojResolveAssemblyReference.cache
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\ScanOperation\obj\Debug\ScanOperation.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\ScanOperation\obj\Debug\ScanOperation.pdb

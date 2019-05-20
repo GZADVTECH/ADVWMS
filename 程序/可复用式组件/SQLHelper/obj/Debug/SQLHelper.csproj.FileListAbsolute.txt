@@ -1,0 +1,5 @@
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\SQLHelper\bin\Debug\SQLHelper.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\SQLHelper\bin\Debug\SQLHelper.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\SQLHelper\obj\Debug\SQLHelper.csprojResolveAssemblyReference.cache
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\SQLHelper\obj\Debug\SQLHelper.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\SQLHelper\obj\Debug\SQLHelper.pdb

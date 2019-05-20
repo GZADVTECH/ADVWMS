@@ -1,0 +1,5 @@
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\KdGoldAPI\bin\Debug\KdGoldAPI.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\KdGoldAPI\bin\Debug\KdGoldAPI.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\KdGoldAPI\obj\Debug\KdGoldAPI.csprojResolveAssemblyReference.cache
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\KdGoldAPI\obj\Debug\KdGoldAPI.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\KdGoldAPI\obj\Debug\KdGoldAPI.pdb

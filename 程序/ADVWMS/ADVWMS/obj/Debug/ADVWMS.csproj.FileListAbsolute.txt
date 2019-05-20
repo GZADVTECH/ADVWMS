@@ -1,0 +1,9 @@
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\ADVWMS\obj\Debug\ADVWMS.Signin.resources
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\ADVWMS\obj\Debug\ADVWMS.csproj.GenerateResource.cache
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\ADVWMS\bin\Debug\ADVWMS.exe
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\ADVWMS\bin\Debug\ADVWMS.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\ADVWMS\obj\Debug\ADVWMS.Properties.Resources.resources
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\ADVWMS\obj\Debug\ADVWMS.csproj.CoreCompileInputs.cache
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\ADVWMS\obj\Debug\ADVWMS.exe
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\ADVWMS\obj\Debug\ADVWMS.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\ADVWMS\obj\Debug\ADVWMS.csprojAssemblyReference.cache
