@@ -42,16 +42,17 @@ namespace Event
         /// <returns></returns>
         public static bool UpdateEventOfContentById(string fieldvalue,string conditionvalue)
         {
-            SqlParameter[] param =
-            {
-                new SqlParameter("@table","T_EVENT"),
-                new SqlParameter("@field","e_content"),
-                new SqlParameter("@fieldvalue",fieldvalue),
-                new SqlParameter("@condition","e_id"),
-                new SqlParameter("@conditionvalue",conditionvalue)
-            };
-            int state = SQLHelper.SQLOperation.Execute("SQL", "PRO_UPDATE", System.Data.CommandType.StoredProcedure, param);
-            if (state > 0) return true; else return false;
+            //SqlParameter[] param =
+            //{
+            //    new SqlParameter("@table","T_EVENT"),
+            //    new SqlParameter("@field","e_content"),
+            //    new SqlParameter("@fieldvalue",fieldvalue),
+            //    new SqlParameter("@condition","e_id"),
+            //    new SqlParameter("@conditionvalue",conditionvalue)
+            //};
+            //int state = SQLHelper.SQLOperation.Execute("SQL", "PRO_UPDATE", System.Data.CommandType.StoredProcedure, param);
+            bool state= Basic.Change("T_EVENT", "e_content", fieldvalue, "e_id", conditionvalue);
+            if (state) return true; else return false;
         }
         /// <summary>
         /// 通过ID查找待办事件更改办事员编号
@@ -61,16 +62,17 @@ namespace Event
         /// <returns></returns>
         public static bool UpdateEventOfHandleById(string fieldvalue, string conditionvalue)
         {
-            SqlParameter[] param =
-            {
-                new SqlParameter("@table","T_EVENT"),
-                new SqlParameter("@field","e_handleid"),
-                new SqlParameter("@fieldvalue",fieldvalue),
-                new SqlParameter("@condition","e_id"),
-                new SqlParameter("@conditionvalue",conditionvalue)
-            };
-            int state = SQLHelper.SQLOperation.Execute("SQL", "PRO_UPDATE", System.Data.CommandType.StoredProcedure, param);
-            if (state > 0) return true; else return false;
+            //SqlParameter[] param =
+            //{
+            //    new SqlParameter("@table","T_EVENT"),
+            //    new SqlParameter("@field","e_handleid"),
+            //    new SqlParameter("@fieldvalue",fieldvalue),
+            //    new SqlParameter("@condition","e_id"),
+            //    new SqlParameter("@conditionvalue",conditionvalue)
+            //};
+            //int state = SQLHelper.SQLOperation.Execute("SQL", "PRO_UPDATE", System.Data.CommandType.StoredProcedure, param);
+            bool state = Basic.Change("T_EVENT", "e_handleid", fieldvalue, "e_id", conditionvalue);
+            if (state) return true; else return false;
         }
         /// <summary>
         /// 通过ID查找待办事件更改待办状态
@@ -80,18 +82,35 @@ namespace Event
         /// <returns></returns>
         public static bool UpdateEventOfStateById(string fieldvalue,string conditionvalue)
         {
-            SqlParameter[] param =
-            {
-                new SqlParameter("@table","T_EVENT"),
-                new SqlParameter("@field","e_state"),
-                new SqlParameter("@fieldvalue",fieldvalue),
-                new SqlParameter("@condition","e_id"),
-                new SqlParameter("@conditionvalue",conditionvalue)
-            };
-            int state = SQLHelper.SQLOperation.Execute("SQL", "PRO_UPDATE", System.Data.CommandType.StoredProcedure, param);
-            if (state > 0) return true; else return false;
+            //SqlParameter[] param =
+            //{
+            //    new SqlParameter("@table","T_EVENT"),
+            //    new SqlParameter("@field","e_state"),
+            //    new SqlParameter("@fieldvalue",fieldvalue),
+            //    new SqlParameter("@condition","e_id"),
+            //    new SqlParameter("@conditionvalue",conditionvalue)
+            //};
+            //int state = SQLHelper.SQLOperation.Execute("SQL", "PRO_UPDATE", System.Data.CommandType.StoredProcedure, param);
+            bool state = Basic.Change("T_EVENT", "e_state", fieldvalue, "e_id", conditionvalue);
+            if (state) return true; else return false;
         }
-
-        public static DataSet SelectEvent(string )
+        /// <summary>
+        /// 查询待办事件的所有详细信息，返回DataSet数据类型
+        /// </summary>
+        /// <returns></returns>
+        public static DataSet SelectEventToDataSet()
+        {
+            DataSet ds = Basic.SelectDataSet("T_EVENT", "*", "");
+            if (ds == null) return null; else return ds;
+        }
+        /// <summary>
+        /// 查询待办事件的所有详细信息，返回DateTable数据类型
+        /// </summary>
+        /// <returns></returns>
+        public static DataTable SelectEventToDataTable()
+        {
+            DataTable dt = Basic.SelectDataTable("T_EVENT", "*", "");
+            if (dt == null) return null; else return dt;
+        }
     }
 }

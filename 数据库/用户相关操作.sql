@@ -67,6 +67,30 @@ go
 exec PRO_SELECT 'T_LOGIN','*','l_id=1'
 go
 
+--通用数据信息查询
+create procedure PRO_FULLUPDATE
+@table nvarchar(30),
+@fieldvalue nvarchar(225),
+@conditionvalue nvarchar(225)=''
+as
+begin
+	begin try
+	begin transaction
+	declare @sql nvarchar(max)
+	set @sql=N'update '+@table+' set '+@fieldvalue+' where 1=1 '
+	if(@conditionvalue<>'') 
+	begin
+	set @sql+='and '+@conditionvalue
+	end
+	exec sp_executesql @sql,N' @table nvarchar(30),@fieldvalue nvarchar(225),@conditionvalue nvarchar(225)',@table,@fieldvalue,@conditionvalue
+	commit transaction
+	end try
+	begin catch
+	rollback transaction
+	end catch
+end
+go
+
 --通用数据信息修改
 create procedure PRO_UPDATE
 @table nvarchar(30),
@@ -159,7 +183,7 @@ as
 begin
 	begin try
 	begin transaction
-	insert into T_SALARY values(@s_uid,GETDATE(),@s_basicwage,@s_formal,@s_position,@s_ability
+	insert into T_SALARY values(@s_uid,Convert(varchar,GETDATE(),111),@s_basicwage,@s_formal,@s_position,@s_ability
 	,@s_traffic,@s_festival,@s_full,@s_bonus,@s_housing,@s_insurance,@s_bill,@s_attendance
 	,@s_hygiene,@s_meals,@s_utilites,@s_tax,@s_operation,@s_state,@s_remark)
 	commit transaction

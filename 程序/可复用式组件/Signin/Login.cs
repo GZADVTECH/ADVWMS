@@ -70,13 +70,13 @@ namespace Signin
         /// <returns>成功返回true，失败返回false</returns>
         public static bool LoginRecord(string uid, string ipaddress)
         {
-            SqlParameter[] param =
-            {
-                new SqlParameter("@lr_uid",uid),
-                new SqlParameter("@lr_ipaddress",ipaddress)
-            };
-            int state = SQLOperation.Execute("SQL", "PRO_LOGINRECORD_INSERT", CommandType.StoredProcedure, param);
-            if (state > 0) return true;
+            //SqlParameter[] param =
+            //{
+            //    new SqlParameter("@lr_uid",uid),
+            //    new SqlParameter("@lr_ipaddress",ipaddress)
+            //};
+            bool state = Basic.Change("T_LOGIN", "lr_uid", uid,"lr_ipaddress", ipaddress);
+            if (state) return true;
             else return false;
         }
         /// <summary>
@@ -87,16 +87,17 @@ namespace Signin
         /// <returns>提交忘记密码反馈给管理员，成功返回true，错误返回false</returns>
         public static bool ForgetPassword(string uid,string pwd)
         {
-            SqlParameter[] param =
-            {
-                new SqlParameter("@table","T_LOGIN"),
-                new SqlParameter("@field","l_password"),
-                new SqlParameter("@fieldvalue",pwd),
-                new SqlParameter("@condition","l_accountnumber"),
-                new SqlParameter("@conditionvalue",uid)
-            };
-            int state = SQLOperation.Execute("SQL", "PRO_UPDATE", CommandType.StoredProcedure, param);
-            if (state > 0) return true;
+            //SqlParameter[] param =
+            //{
+            //    new SqlParameter("@table","T_LOGIN"),
+            //    new SqlParameter("@field","l_password"),
+            //    new SqlParameter("@fieldvalue",pwd),
+            //    new SqlParameter("@condition","l_accountnumber"),
+            //    new SqlParameter("@conditionvalue",uid)
+            //};
+            //int state = SQLOperation.Execute("SQL", "PRO_UPDATE", CommandType.StoredProcedure, param);
+            bool state = Basic.Change("T_LOGIN", "l_password", pwd, "l_accountnumber", uid);
+            if (state) return true;
             else return false;
         }
         /// <summary>
