@@ -256,16 +256,17 @@ end
 go
 
 --添加采销货物
-create procedure PRO_PURCHASESALE_INSERT
+alter procedure PRO_PURCHASESALE_INSERT
 @ps_id nvarchar(255),
 @ps_gid int,
+@ps_number decimal,
 @ps_price money,
 @ps_tax smallint,
-@ps_taxprice int,
+@ps_taxprice money,
 @ps_time smalldatetime
 as
 begin
-	insert into T_PURCHASESALE values(@ps_id,@ps_gid,@ps_price,@ps_tax,@ps_taxprice,@ps_time)
+	insert into T_PURCHASESALE values(@ps_id,@ps_gid,@ps_number,@ps_price,@ps_tax,@ps_taxprice,@ps_time)
 end
 go
 
@@ -288,7 +289,6 @@ go
 create procedure PRO_PURCHASESALEMESSAGE_INSERT
 @psm_id nvarchar(255),
 @psm_insidenumber nvarchar(30),
-@psm_ordertime smalldatetime,
 @psm_customer int,
 @psm_uid int,
 @psm_estimatetime smalldatetime,
@@ -297,7 +297,7 @@ create procedure PRO_PURCHASESALEMESSAGE_INSERT
 @psm_type nvarchar(10)
 as
 begin
-	insert into T_PURCHASESALEMESSAGE values(@psm_id,@psm_insidenumber,@psm_ordertime,@psm_customer,@psm_uid,@psm_estimatetime,@psm_state,@psm_operation,@psm_type)
+	insert into T_PURCHASESALEMESSAGE values(@psm_id,@psm_insidenumber,GETDATE(),@psm_customer,@psm_uid,@psm_estimatetime,@psm_state,@psm_operation,@psm_type)
 end
 go
 

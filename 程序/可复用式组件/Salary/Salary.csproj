@@ -44,6 +44,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Basics\Basics.csproj">
+      <Project>{D2AA1F58-8D99-41BF-8CDF-11238CDFCFD5}</Project>
+      <Name>Basics</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SQLHelper\Helper.csproj">
       <Project>{cb863f27-e252-4199-84b9-7cb8046367ba}</Project>
       <Name>Helper</Name>

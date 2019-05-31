@@ -55,7 +55,7 @@ namespace Salary
         {
             try
             {
-                DataSet ds = Basic.SelectDataSet("T_SALARY", "*", "Convert(varchar,s_time,111)="+time == null ? "" : time.ToString("yyyy/MM/dd"));
+                DataSet ds = Basic.SelectDataSet("T_SALARY", "*", "Convert(varchar,s_time,111)='"+time == null ? "" : time.ToString("yyyy/MM/dd")+"'");
                 if (ds == null) return null;
                 else return ds;
             }
@@ -73,7 +73,7 @@ namespace Salary
         {
             try
             {
-                DataTable dt = Basic.SelectDataTable("T_SALARY", "*", "Convert(varchar,s_time,111)=" + time == null ? "" : time.ToString("yyyy/MM/dd"));
+                DataTable dt = Basic.SelectDataTable("T_SALARY", "*", "Convert(varchar,s_time,111)='" + time == null ? "" : time.ToString("yyyy/MM/dd")+"'");
                 if (dt == null) return null;
                 else return dt;
             }
@@ -289,7 +289,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfBasicwageByUidAndTime(string basicwage, string uid,string time)
         {
-            bool state = Basic.FullChange("T_SALARY", basicwage, "s_uid="+uid+" and Convert(varchar,"+time+",111)");
+            bool state = Basic.FullChange("T_SALARY", basicwage, "s_uid='"+uid+"' and Convert(varchar,'"+time+"',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -301,7 +301,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfFormalByUidAndTime(string formal, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY", formal, "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY", formal, "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -313,7 +313,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfPositionByUidAndTime(string position, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY", position,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY", position,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -325,7 +325,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfAbilityByUidAndTime(string ability, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY", ability,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY", ability,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -337,7 +337,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfTrafficByUidAndTime(string traffic, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  traffic,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  traffic,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -349,7 +349,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfFestivalByUidAndTime(string festival, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  festival,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  festival,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -361,7 +361,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfFullByUidAndTime(string full, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  full,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  full,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -373,7 +373,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfBonusByUidAndTime(string bonus, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  bonus,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  bonus,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -385,7 +385,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfHousingByUidAndTime(string housing, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  housing,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  housing,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -397,7 +397,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfInsuranceByUidAndTime(string insurance, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  insurance,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  insurance,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -409,7 +409,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfBillByUidAndTime(string bill, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  bill,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  bill,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -421,7 +421,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfAttendanceByUidAndTime(string attendance, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  attendance,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  attendance,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -433,7 +433,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfHygieneByUidAndTime(string hygiene, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  hygiene,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  hygiene,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -445,7 +445,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfMealsByUidAndTime(string meals, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  meals,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  meals,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -457,7 +457,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfUtilitesByUidAndTime(string utilites, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  utilites,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  utilites,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -469,7 +469,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfTaxByUidAndTime(string tax, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  tax,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  tax,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
         /// <summary>
@@ -481,7 +481,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfStateByUidAndTime(string state, string uid, string time)
         {
-            bool states = Basic.FullChange("T_SALARY",  state,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool states = Basic.FullChange("T_SALARY",  state,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (states) return true; else return false;
         }
         /// <summary>
@@ -493,7 +493,7 @@ namespace Salary
         /// <returns></returns>
         public static bool UpdateSalaryOfRemarkByUidAndTime(string remark, string uid, string time)
         {
-            bool state = Basic.FullChange("T_SALARY",  remark,  "s_uid=" + uid + " and Convert(varchar," + time + ",111)");
+            bool state = Basic.FullChange("T_SALARY",  remark,  "s_uid='" + uid + "' and Convert(varchar,'" + time + "',111)");
             if (state) return true; else return false;
         }
     }

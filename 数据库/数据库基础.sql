@@ -178,11 +178,13 @@ go
 --采销货物表
 create table T_PURCHASESALE
 (
-	ps_id nvarchar(255) primary key,
+	ps_pid int primary key identity(1,1),
+	ps_id nvarchar(255),
 	ps_gid int foreign key references T_GOODS(g_id),
+	ps_number smallint,
 	ps_price money,
-	ps_tax smallint,
-	ps_taxprice int,
+	ps_tax decimal,
+	ps_taxprice money,
 	ps_time smalldatetime
 )
 go
@@ -204,7 +206,7 @@ go
 --采销信息表
 create table T_PURCHASESALEMESSAGE
 (
-	psm_id nvarchar(255) foreign key references T_PURCHASESALE(ps_id),
+	psm_id nvarchar(255) primary key,
 	psm_insidenumber nvarchar(30),
 	psm_ordertime smalldatetime,
 	psm_customer int foreign key references T_CUSTOMER(c_id),
@@ -221,7 +223,7 @@ create table T_ACCESS
 (
 	ac_id int foreign key references T_GOODS(g_id),
 	ac_number int,
-	ac_ordernumber nvarchar(255) foreign key references T_PURCHASESALE(ps_id),
+	ac_ordernumber nvarchar(255) foreign key references T_PURCHASESALEMESSAGE(psm_id),
 	ac_warehouse nvarchar(30),
 	ac_time smalldatetime,
 	ac_uid int foreign key references T_LOGIN(l_id),
@@ -272,7 +274,7 @@ go
 --发票联表
 create table T_INVOICE
 (
-	i_ordernumber nvarchar(255) foreign key references T_PURCHASESALE(ps_id),
+	i_ordernumber nvarchar(255) foreign key references T_PURCHASESALEMESSAGE(psm_id),
 	i_invoicenumber nvarchar(30),
 	i_allprice money,
 	i_time smalldatetime,
@@ -286,7 +288,7 @@ go
 create table T_AFTERSALE
 (
 	as_id int primary key identity(1,1),
-	as_ordernumber nvarchar(255) foreign key references T_PURCHASESALE(ps_id),
+	as_ordernumber nvarchar(255) foreign key references T_PURCHASESALEMESSAGE(psm_id),
 	as_gid int foreign key references T_GOODS(g_id),
 	as_receivetime smalldatetime,
 	as_content nvarchar(255),

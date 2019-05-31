@@ -73,7 +73,24 @@ namespace Basics
             if (ds.Tables[0].Rows.Count != 0) return ds;
             else return null;
         }
-
-        
+        /// <summary>
+        /// 通用式任意条件更改数据
+        /// </summary>
+        /// <param name="table">更改数据表名称</param>
+        /// <param name="fieldvalue">更改字段内容</param>
+        /// <param name="conditionvalue">条件字段内容</param>
+        /// <returns></returns>
+        public static bool FullChange(string table,string fieldvalue,string conditionvalue)
+        {
+            SqlParameter[] param =
+            {
+                new SqlParameter("@table",table),
+                new SqlParameter("@fieldvalue",fieldvalue),
+                new SqlParameter("@conditionvalue",conditionvalue)
+            };
+            int state = SQLHelper.SQLOperation.Execute("SQL", "PRO_FULLUPDATE", CommandType.StoredProcedure, param);
+            if (state > 0) return true;
+            else return false;
+        }
     }
 }
