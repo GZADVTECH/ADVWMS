@@ -16,6 +16,7 @@ namespace Event
     /// </summary>
     public class EventOperation
     {
+        #region 加密类
         /// <summary>
         /// 插入待办事件信息
         /// </summary>
@@ -23,7 +24,7 @@ namespace Event
         /// <param name="releaseid">发布者编号</param>
         /// <param name="handleid">执行者编号</param>
         /// <returns>成功返回true，失败返回false</returns>
-        public static bool InsertEvent(string content,string releaseid,string handleid)
+        private static bool InsertEvent(string content, string releaseid, string handleid)
         {
             SqlParameter[] param =
             {
@@ -32,7 +33,7 @@ namespace Event
                 new SqlParameter("@e_handleid",handleid)
             };
             int state = SQLHelper.SQLOperation.Execute("SQL", "PRO_EVENT_INSERT", System.Data.CommandType.StoredProcedure, param);
-            if (state > 0) return true;else return false;
+            if (state > 0) return true; else return false;
         }
         /// <summary>
         /// 通过ID查找待办事件更改待办内容
@@ -40,7 +41,7 @@ namespace Event
         /// <param name="fieldvalue">待办内容</param>
         /// <param name="conditionvalue">待办事件ID</param>
         /// <returns></returns>
-        public static bool UpdateEventOfContentById(string fieldvalue,string conditionvalue)
+        private static bool UpdateEventOfContentById(string fieldvalue, string conditionvalue)
         {
             //SqlParameter[] param =
             //{
@@ -51,8 +52,8 @@ namespace Event
             //    new SqlParameter("@conditionvalue",conditionvalue)
             //};
             //int state = SQLHelper.SQLOperation.Execute("SQL", "PRO_UPDATE", System.Data.CommandType.StoredProcedure, param);
-            bool state= Basic.Change("T_EVENT", "e_content", fieldvalue, "e_id", conditionvalue);
-            if (state) return true; else return false;
+            bool state = Basic.Change("T_EVENT", "e_content", fieldvalue, "e_id", conditionvalue);
+            return state;
         }
         /// <summary>
         /// 通过ID查找待办事件更改办事员编号
@@ -60,7 +61,7 @@ namespace Event
         /// <param name="fieldvalue">办事员编号</param>
         /// <param name="conditionvalue">待办事件ID</param>
         /// <returns></returns>
-        public static bool UpdateEventOfHandleById(string fieldvalue, string conditionvalue)
+        private static bool UpdateEventOfHandleById(string fieldvalue, string conditionvalue)
         {
             //SqlParameter[] param =
             //{
@@ -72,7 +73,7 @@ namespace Event
             //};
             //int state = SQLHelper.SQLOperation.Execute("SQL", "PRO_UPDATE", System.Data.CommandType.StoredProcedure, param);
             bool state = Basic.Change("T_EVENT", "e_handleid", fieldvalue, "e_id", conditionvalue);
-            if (state) return true; else return false;
+            return state;
         }
         /// <summary>
         /// 通过ID查找待办事件更改待办状态
@@ -80,7 +81,7 @@ namespace Event
         /// <param name="fieldvalue">待办状态</param>
         /// <param name="conditionvalue">待办事件ID</param>
         /// <returns></returns>
-        public static bool UpdateEventOfStateById(string fieldvalue,string conditionvalue)
+        private static bool UpdateEventOfStateById(string fieldvalue, string conditionvalue)
         {
             //SqlParameter[] param =
             //{
@@ -92,13 +93,13 @@ namespace Event
             //};
             //int state = SQLHelper.SQLOperation.Execute("SQL", "PRO_UPDATE", System.Data.CommandType.StoredProcedure, param);
             bool state = Basic.Change("T_EVENT", "e_state", fieldvalue, "e_id", conditionvalue);
-            if (state) return true; else return false;
+            return state;
         }
         /// <summary>
         /// 查询待办事件的所有详细信息，返回DataSet数据类型
         /// </summary>
         /// <returns></returns>
-        public static DataSet SelectEventToDataSet()
+        private static DataSet SelectEventToDataSet()
         {
             DataSet ds = Basic.SelectDataSet("T_EVENT", "*", "");
             if (ds == null) return null; else return ds;
@@ -107,10 +108,71 @@ namespace Event
         /// 查询待办事件的所有详细信息，返回DateTable数据类型
         /// </summary>
         /// <returns></returns>
-        public static DataTable SelectEventToDataTable()
+        private static DataTable SelectEventToDataTable()
         {
             DataTable dt = Basic.SelectDataTable("T_EVENT", "*", "");
             if (dt == null) return null; else return dt;
         }
+        #endregion
+
+        #region 公开类
+        /// <summary>
+        /// 插入待办事件信息
+        /// </summary>
+        /// <param name="content">待办事件内容</param>
+        /// <param name="releaseid">发布者编号</param>
+        /// <param name="handleid">执行者编号</param>
+        /// <returns>成功返回true，失败返回false</returns>
+        public static bool DoInsertEvent(string content, string releaseid, string handleid)
+        {
+            return InsertEvent(content, releaseid, handleid);
+        }
+        /// <summary>
+        /// 通过ID查找待办事件更改待办内容
+        /// </summary>
+        /// <param name="fieldvalue">待办内容</param>
+        /// <param name="conditionvalue">待办事件ID</param>
+        /// <returns></returns>
+        public static bool DoUpdateEventOfContentById(string fieldvalue, string conditionvalue)
+        {
+            return UpdateEventOfContentById(fieldvalue, conditionvalue);
+        }
+        /// <summary>
+        /// 通过ID查找待办事件更改办事员编号
+        /// </summary>
+        /// <param name="fieldvalue">办事员编号</param>
+        /// <param name="conditionvalue">待办事件ID</param>
+        /// <returns></returns>
+        public static bool DoUpdateEventOfHandleById(string fieldvalue, string conditionvalue)
+        {
+            return UpdateEventOfHandleById(fieldvalue, conditionvalue);
+        }
+        /// <summary>
+        /// 通过ID查找待办事件更改待办状态
+        /// </summary>
+        /// <param name="fieldvalue">待办状态</param>
+        /// <param name="conditionvalue">待办事件ID</param>
+        /// <returns></returns>
+        public static bool DoUpdateEventOfStateById(string fieldvalue, string conditionvalue)
+        {
+            return UpdateEventOfStateById(fieldvalue, conditionvalue);
+        }
+        /// <summary>
+        /// 查询待办事件的所有详细信息，返回DataSet数据类型
+        /// </summary>
+        /// <returns></returns>
+        public static DataSet DoSelectEventToDataSet()
+        {
+           return SelectEventToDataSet();
+        }
+        /// <summary>
+        /// 查询待办事件的所有详细信息，返回DateTable数据类型
+        /// </summary>
+        /// <returns></returns>
+        public static DataTable DoSelectEventToDataTable()
+        {
+            return SelectEventToDataTable();
+        }
+        #endregion
     }
 }
