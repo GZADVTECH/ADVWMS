@@ -3,3 +3,8 @@ E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\ServerUploadDownload\bin\Debug\
 E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\ServerUploadDownload\obj\Debug\ServerUploadDownload.csprojResolveAssemblyReference.cache
 E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\ServerUploadDownload\obj\Debug\ServerUploadDownload.dll
 E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\ServerUploadDownload\obj\Debug\ServerUploadDownload.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\ServerUploadDownload\bin\Debug\ServerUploadDownload.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\ServerUploadDownload\bin\Debug\ServerUploadDownload.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\ServerUploadDownload\obj\Debug\ServerUploadDownload.csprojResolveAssemblyReference.cache
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\ServerUploadDownload\obj\Debug\ServerUploadDownload.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\ServerUploadDownload\obj\Debug\ServerUploadDownload.pdb

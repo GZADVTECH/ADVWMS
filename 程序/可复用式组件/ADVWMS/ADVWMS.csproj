@@ -43,6 +43,16 @@
     <Compile Include="SignIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Signin\Signin.csproj">
+      <Project>{e1cb6abc-c021-4c5c-8ca6-65facdbf2360}</Project>
+      <Name>Signin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLHelper\Helper.csproj">
+      <Project>{CB863F27-E252-4199-84B9-7CB8046367BA}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,0 +1,23 @@
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\Low Match Edition\bin\Debug\Low Match Edition.exe.config
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\Low Match Edition\bin\Debug\Low Match Edition.exe
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\Low Match Edition\bin\Debug\Low Match Edition.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low Match Edition.csprojResolveAssemblyReference.cache
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low_Match_Edition.Properties.Resources.resources
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low Match Edition.csproj.GenerateResource.Cache
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low Match Edition.exe
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low Match Edition.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low_Match_Edition.Signin.resources
+E:\SelfDocument\CSharp\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low_Match_Edition.Home.resources
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\bin\Debug\Low Match Edition.exe.config
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low Match Edition.exe
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low Match Edition.pdb
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\bin\Debug\Low Match Edition.exe
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\bin\Debug\Low Match Edition.pdb
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low Match Edition.csprojResolveAssemblyReference.cache
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low_Match_Edition.Home.resources
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low_Match_Edition.Signin.resources
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low_Match_Edition.Properties.Resources.resources
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low Match Edition.csproj.GenerateResource.Cache
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\bin\Debug\ClassLibrary.dll
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\bin\Debug\ClassLibrary.pdb
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\Low Match Edition\obj\Debug\Low_Match_Edition.MyBox.resources

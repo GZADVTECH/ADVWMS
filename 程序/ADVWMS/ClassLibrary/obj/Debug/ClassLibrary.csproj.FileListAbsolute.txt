@@ -1,0 +1,5 @@
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\ClassLibrary\bin\Debug\ClassLibrary.dll
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\ClassLibrary\bin\Debug\ClassLibrary.pdb
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\ClassLibrary\obj\Debug\ClassLibrary.dll
+\\jasonwork\Share\开发技术文档及程序\广州希创旺思电子科技有限公司\广州希创旺思管理系统\ADV-WMS\程序\ADVWMS\ClassLibrary\obj\Debug\ClassLibrary.pdb

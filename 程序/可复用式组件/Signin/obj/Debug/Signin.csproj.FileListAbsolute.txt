@@ -8,3 +8,16 @@ E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\Signin\obj\Debug\Signin.pdb
 E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\obj\Debug\Signin.csprojResolveAssemblyReference.cache
 E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\obj\Debug\Signin.dll
 E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\obj\Debug\Signin.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\Signin.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\Signin.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\Basics.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\SQLHelper.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\NPOI.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\NPOI.OOXML.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\NPOI.OpenXml4Net.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\Basics.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\SQLHelper.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\NPOI.xml
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\NPOI.OOXML.xml
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Signin\bin\Debug\NPOI.OpenXml4Net.xml

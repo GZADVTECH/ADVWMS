@@ -1,0 +1,16 @@
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\Report.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\Report.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\Basics.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\SQLHelper.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\NPOI.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\NPOI.OOXML.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\NPOI.OpenXml4Net.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\Basics.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\SQLHelper.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\NPOI.xml
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\NPOI.OOXML.xml
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\bin\Debug\NPOI.OpenXml4Net.xml
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\obj\Debug\Report.csprojResolveAssemblyReference.cache
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\obj\Debug\Report.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\Report\obj\Debug\Report.pdb

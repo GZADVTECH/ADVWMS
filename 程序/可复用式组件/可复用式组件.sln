@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock", "Stock\Stock.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADVWMS", "ADVWMS\ADVWMS.csproj", "{484A5E2C-1625-4CEB-B59A-F3ED33E568CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeToPdf", "OfficeToPdf\OfficeToPdf.csproj", "{F2593C02-374D-433C-B7A1-A724E87796A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{484A5E2C-1625-4CEB-B59A-F3ED33E568CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{484A5E2C-1625-4CEB-B59A-F3ED33E568CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{484A5E2C-1625-4CEB-B59A-F3ED33E568CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2593C02-374D-433C-B7A1-A724E87796A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2593C02-374D-433C-B7A1-A724E87796A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2593C02-374D-433C-B7A1-A724E87796A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2593C02-374D-433C-B7A1-A724E87796A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

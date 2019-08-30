@@ -29,7 +29,7 @@ namespace Signin
         /// <param name="department">部门</param>
         /// <param name="name">姓名</param>
         /// <returns></returns>
-        private static bool Register(string accountnumber, string password, string level, string position, string department, string name)
+        private static bool Register(string accountnumber, string password, string level, string position, string department, string name) 
         {
             SqlParameter[] param =
             {
@@ -96,7 +96,7 @@ namespace Signin
             //    new SqlParameter("@conditionvalue",uid)
             //};
             //int state = SQLOperation.Execute("SQL", "PRO_UPDATE", CommandType.StoredProcedure, param);
-            bool state = Basic.Change("T_LOGIN", "l_password", pwd, "l_accountnumber", uid);
+            bool state = Basic.Change("T_LOGIN", "l_password", MD5Encrypt.MD5Encrypt32(pwd), "l_accountnumber", uid);
             return state;
         }
         /// <summary>

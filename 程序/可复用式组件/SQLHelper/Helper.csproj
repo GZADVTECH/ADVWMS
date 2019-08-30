@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LogOperation.cs" />
     <Compile Include="NPOIOperation.cs" />
     <Compile Include="SQLOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

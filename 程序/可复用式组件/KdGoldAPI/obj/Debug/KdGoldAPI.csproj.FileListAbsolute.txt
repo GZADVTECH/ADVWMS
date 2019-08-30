@@ -3,3 +3,8 @@ E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\KdGoldAPI\bin\Debug\KdGoldAPI.p
 E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\KdGoldAPI\obj\Debug\KdGoldAPI.csprojResolveAssemblyReference.cache
 E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\KdGoldAPI\obj\Debug\KdGoldAPI.dll
 E:\SelfDocument\CSharp\ADV-WMS\程序\XC-ADV_WMS\KdGoldAPI\obj\Debug\KdGoldAPI.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\KdGoldAPI\bin\Debug\KdGoldAPI.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\KdGoldAPI\bin\Debug\KdGoldAPI.pdb
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\KdGoldAPI\obj\Debug\KdGoldAPI.csprojResolveAssemblyReference.cache
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\KdGoldAPI\obj\Debug\KdGoldAPI.dll
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\KdGoldAPI\obj\Debug\KdGoldAPI.pdb

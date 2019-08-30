@@ -29,130 +29,115 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signin));
+            this.bLogin = new System.Windows.Forms.Label();
+            this.bRegion = new System.Windows.Forms.Label();
+            this.bFormat = new System.Windows.Forms.Label();
+            this.tUid = new System.Windows.Forms.TextBox();
+            this.tPwd = new System.Windows.Forms.TextBox();
             this.CloseForm = new System.Windows.Forms.PictureBox();
-            this.lAppName = new System.Windows.Forms.Label();
-            this.ADVForm = new System.Windows.Forms.PictureBox();
-            this.llForget = new System.Windows.Forms.LinkLabel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lUid = new System.Windows.Forms.Label();
-            this.lPwd = new System.Windows.Forms.Label();
-            this.bLogin = new System.Windows.Forms.Button();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.CloseForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ADVForm)).BeginInit();
             this.SuspendLayout();
+            // 
+            // bLogin
+            // 
+            this.bLogin.BackColor = System.Drawing.Color.Transparent;
+            this.bLogin.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bLogin.ForeColor = System.Drawing.Color.White;
+            this.bLogin.Location = new System.Drawing.Point(85, 350);
+            this.bLogin.Name = "bLogin";
+            this.bLogin.Size = new System.Drawing.Size(194, 22);
+            this.bLogin.TabIndex = 3;
+            this.bLogin.Text = "L o g i n  i n";
+            this.bLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bLogin.Click += new System.EventHandler(this.bLogin_Click);
+            this.bLogin.MouseEnter += new System.EventHandler(this.bLogin_MouseEnter);
+            this.bLogin.MouseLeave += new System.EventHandler(this.bLogin_MouseLeave);
+            // 
+            // bRegion
+            // 
+            this.bRegion.AutoSize = true;
+            this.bRegion.BackColor = System.Drawing.Color.Transparent;
+            this.bRegion.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bRegion.ForeColor = System.Drawing.Color.Navy;
+            this.bRegion.Location = new System.Drawing.Point(65, 375);
+            this.bRegion.Name = "bRegion";
+            this.bRegion.Size = new System.Drawing.Size(35, 12);
+            this.bRegion.TabIndex = 4;
+            this.bRegion.Text = "注册!";
+            this.bRegion.MouseEnter += new System.EventHandler(this.bRegion_MouseEnter);
+            this.bRegion.MouseLeave += new System.EventHandler(this.bRegion_Leave);
+            // 
+            // bFormat
+            // 
+            this.bFormat.AutoSize = true;
+            this.bFormat.BackColor = System.Drawing.Color.Transparent;
+            this.bFormat.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.bFormat.ForeColor = System.Drawing.Color.Navy;
+            this.bFormat.Location = new System.Drawing.Point(263, 375);
+            this.bFormat.Name = "bFormat";
+            this.bFormat.Size = new System.Drawing.Size(41, 12);
+            this.bFormat.TabIndex = 5;
+            this.bFormat.Text = "忘记？";
+            this.bFormat.MouseEnter += new System.EventHandler(this.bRegion_MouseEnter);
+            this.bFormat.MouseLeave += new System.EventHandler(this.bRegion_Leave);
+            // 
+            // tUid
+            // 
+            this.tUid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tUid.Font = new System.Drawing.Font("Bradley Hand ITC", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tUid.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.tUid.Location = new System.Drawing.Point(106, 157);
+            this.tUid.MaxLength = 20;
+            this.tUid.Name = "tUid";
+            this.tUid.Size = new System.Drawing.Size(188, 25);
+            this.tUid.TabIndex = 1;
+            this.tUid.Text = "请输入账号";
+            this.tUid.Enter += new System.EventHandler(this.tUid_Enter);
+            this.tUid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Signin_KeyPress);
+            this.tUid.Leave += new System.EventHandler(this.tUid_Leave);
+            // 
+            // tPwd
+            // 
+            this.tPwd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tPwd.Font = new System.Drawing.Font("Bradley Hand ITC", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tPwd.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.tPwd.Location = new System.Drawing.Point(106, 210);
+            this.tPwd.MaxLength = 20;
+            this.tPwd.Name = "tPwd";
+            this.tPwd.Size = new System.Drawing.Size(188, 25);
+            this.tPwd.TabIndex = 2;
+            this.tPwd.Text = "请输入密码";
+            this.tPwd.Enter += new System.EventHandler(this.tUid_Enter);
+            this.tPwd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Signin_KeyPress);
+            this.tPwd.Leave += new System.EventHandler(this.tPwd_Leave);
             // 
             // CloseForm
             // 
-            this.CloseForm.Location = new System.Drawing.Point(245, 2);
+            this.CloseForm.BackColor = System.Drawing.Color.Transparent;
+            this.CloseForm.Location = new System.Drawing.Point(312, 12);
             this.CloseForm.Name = "CloseForm";
-            this.CloseForm.Size = new System.Drawing.Size(16, 16);
-            this.CloseForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.CloseForm.Size = new System.Drawing.Size(30, 27);
+            this.CloseForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.CloseForm.TabIndex = 0;
             this.CloseForm.TabStop = false;
             this.CloseForm.Click += new System.EventHandler(this.CloseForm_Click);
             this.CloseForm.MouseEnter += new System.EventHandler(this.CloseForm_MouseEnter);
             this.CloseForm.MouseLeave += new System.EventHandler(this.CloseForm_MouseLeave);
             // 
-            // lAppName
-            // 
-            this.lAppName.AutoSize = true;
-            this.lAppName.Font = new System.Drawing.Font("楷体", 10F, System.Drawing.FontStyle.Bold);
-            this.lAppName.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lAppName.Location = new System.Drawing.Point(24, 5);
-            this.lAppName.Name = "lAppName";
-            this.lAppName.Size = new System.Drawing.Size(157, 14);
-            this.lAppName.TabIndex = 1;
-            this.lAppName.Text = "广州希创旺思管理系统";
-            // 
-            // ADVForm
-            // 
-            this.ADVForm.BackColor = System.Drawing.Color.Transparent;
-            this.ADVForm.Location = new System.Drawing.Point(1, 2);
-            this.ADVForm.Name = "ADVForm";
-            this.ADVForm.Size = new System.Drawing.Size(20, 17);
-            this.ADVForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ADVForm.TabIndex = 2;
-            this.ADVForm.TabStop = false;
-            // 
-            // llForget
-            // 
-            this.llForget.AutoSize = true;
-            this.llForget.Location = new System.Drawing.Point(187, 211);
-            this.llForget.Name = "llForget";
-            this.llForget.Size = new System.Drawing.Size(65, 12);
-            this.llForget.TabIndex = 3;
-            this.llForget.TabStop = true;
-            this.llForget.Text = "忘记密码？";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(86, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 21);
-            this.textBox1.TabIndex = 4;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(86, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 21);
-            this.textBox2.TabIndex = 4;
-            // 
-            // lUid
-            // 
-            this.lUid.AutoSize = true;
-            this.lUid.Location = new System.Drawing.Point(39, 70);
-            this.lUid.Name = "lUid";
-            this.lUid.Size = new System.Drawing.Size(41, 12);
-            this.lUid.TabIndex = 5;
-            this.lUid.Text = "账号：";
-            // 
-            // lPwd
-            // 
-            this.lPwd.AutoSize = true;
-            this.lPwd.Location = new System.Drawing.Point(39, 107);
-            this.lPwd.Name = "lPwd";
-            this.lPwd.Size = new System.Drawing.Size(41, 12);
-            this.lPwd.TabIndex = 5;
-            this.lPwd.Text = "密码：";
-            // 
-            // bLogin
-            // 
-            this.bLogin.Location = new System.Drawing.Point(97, 146);
-            this.bLogin.Name = "bLogin";
-            this.bLogin.Size = new System.Drawing.Size(75, 23);
-            this.bLogin.TabIndex = 6;
-            this.bLogin.Text = "登录";
-            this.bLogin.UseVisualStyleBackColor = true;
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(13, 210);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(65, 12);
-            this.linkLabel2.TabIndex = 7;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "linkLabel2";
-            // 
             // Signin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(264, 232);
-            this.Controls.Add(this.linkLabel2);
+            this.BackgroundImage = global::ADVWMS.Properties.Resources.Main;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(354, 403);
+            this.Controls.Add(this.tPwd);
+            this.Controls.Add(this.tUid);
+            this.Controls.Add(this.bFormat);
+            this.Controls.Add(this.bRegion);
             this.Controls.Add(this.bLogin);
-            this.Controls.Add(this.lPwd);
-            this.Controls.Add(this.lUid);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.llForget);
-            this.Controls.Add(this.ADVForm);
-            this.Controls.Add(this.lAppName);
             this.Controls.Add(this.CloseForm);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -161,8 +146,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADV-WMS";
             this.Load += new System.EventHandler(this.Signin_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Signin_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.CloseForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ADVForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,15 +156,11 @@
         #endregion
 
         private System.Windows.Forms.PictureBox CloseForm;
-        private System.Windows.Forms.Label lAppName;
-        private System.Windows.Forms.PictureBox ADVForm;
-        private System.Windows.Forms.LinkLabel llForget;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lUid;
-        private System.Windows.Forms.Label lPwd;
-        private System.Windows.Forms.Button bLogin;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Label bLogin;
+        private System.Windows.Forms.Label bRegion;
+        private System.Windows.Forms.Label bFormat;
+        private System.Windows.Forms.TextBox tUid;
+        private System.Windows.Forms.TextBox tPwd;
     }
 }
 

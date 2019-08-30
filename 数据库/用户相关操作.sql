@@ -67,7 +67,7 @@ go
 exec PRO_SELECT 'T_LOGIN','*','l_id=1'
 go
 
---通用数据信息查询
+--通用数据信息修改
 create procedure PRO_FULLUPDATE
 @table nvarchar(30),
 @fieldvalue nvarchar(225),

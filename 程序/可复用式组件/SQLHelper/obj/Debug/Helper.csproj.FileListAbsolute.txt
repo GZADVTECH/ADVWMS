@@ -9,3 +9,4 @@ E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\SQLHelper\bin\Debug\NPO
 E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\SQLHelper\bin\Debug\NPOI.xml
 E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\SQLHelper\bin\Debug\NPOI.OOXML.xml
 E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\SQLHelper\bin\Debug\NPOI.OpenXml4Net.xml
+E:\SelfDocument\CSharp\ADV-WMS\程序\可复用式组件\SQLHelper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
